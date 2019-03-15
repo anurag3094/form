@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid pt-10">
+        <div class="container form-container">
+            <form action="">
+                <div class="container title">
+                    <div class="row">
+                        <div class="col-sm-12 col-12 col-lg-12 col-md-12 text-center">
+                            <h2>Figs</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-2 pr-2 pt-2">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 pb-2">
+                        <div class="select">
+                            <select name="quality" class="select-text" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Quality Grade - Selected</option>
+                                <option value="2">Quality Grade - One by One 1/1</option>
+                                <option value="3">Quality Grade - One & Half 1-1/2</option>
+                                <option value="3">Quality Grade - Half 1/2</option>
+                                <option value="3">Quality Grade - Quarter</option>
+                            </select>
+                            <span class="select-highlight"></span>
+                            <span class="select-bar"></span>
+                            <label class="select-label">Select Quality Grade</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pb-2">
+                        <div class="group">
+                            <input name="trend" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Trend</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pb-2">
+                        <div class="group">
+                            <input name="graded_quality" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Graded Quality</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pl-2 pr-2 pt-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 pb-2">
+                        <h2 class="ff-play f-18 pl-1">Brand 1</h2>
+                        <div class="container-fluid">
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_1_e" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Exact Q.</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_1_c" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Calculated Q.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 pb-2">
+                        <h2 class="ff-play f-18 pl-1">Brand 2</h2>
+                        <div class="container-fluid">
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_2_e" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Exact Q.</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_2_c" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Calculated Q.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-sm-12 col-12 pb-2">
+                        <h2 class="ff-play f-18 pl-1">Brand 3</h2>
+                        <div class="container-fluid">
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_3_e" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Exact Q.</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="brand_3_c" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Calculated Q.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row pt-2 pr-2 pl-2">
+                    <div class="col-sm-12 col-12 col-md-6 col-lg-6">
+                        <h2 class="ff-play f-18 pl-1">Total</h2>
+                        <div class="container-fluid">
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="total_e" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Exact Q.</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                    <div class="group">
+                                        <input name="total_c" type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Calculated Q.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 text-center">
+                    <div class="col-sm-6 col-md-6 col-6 col-lg-6">
+                        <a href="#" class="btn btn-blue">submit</a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-6 col-lg-6">
+                        <a href="#" class="btn btn-blue">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

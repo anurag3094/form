@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css?family=Play|Roboto');
+
+body{
+    text-transform: capitalize;
+}
+.ff-play{
+    font-family: 'Play', sans-serif;    
+}
+.f-18{
+    font-size: 22px;
+    font-weight: 500
+}
+th{
+    border: 2px solid black;
+    font-family: 'Play', sans-serif;    
+    font-size: 16px;
+}
+td{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: 2px dotted black
+}
+.f-border{
+    border: 2px solid black !important;
+}
+.lr-border{
+    border-left: 2px solid black; 
+    border-right: 2px solid black;
+}
+.l-border{
+    border-left: 2px solid black; 
+}
+.r-border{
+    border-right: 2px solid black;
+}
+.t-border{
+    border-top: 2px solid black;
+}
+.b-border{
+    border-bottom: 2px solid black
+}
+.d-border{
+    border: 2px dotted black
+}
+.f-border2{
+    border-bottom: 2px solid black;
+    border-right:  2px dotted black;
+    border-left:  2px dotted black
+}
+.pt-25{
+    padding-top: 25vh
+}
+.table-header{
+    background: #eee
+}
+.table-footer{
+    background: yellow
+}
+.table-footer-grand{
+    background: orange
+}
+.sub-header{
+    background: #eee
+}
+.pt-10{
+    padding-top: 10vh
+}
+.form-container{
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px
+}    
+.title{
+    position: relative;
+    top: -5vh;
+    left: 0%;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 10vh;
+    padding: 10px 0px;
+    color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.group{ 
+    position:relative; 
+    margin-bottom:45px; 
+}
+input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #757575;
+    font-family: 'Roboto', sans-serif;  
+}
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+color:#999; 
+font-size:18px;
+font-weight:normal;
+position:absolute;
+pointer-events:none;
+left:5px;
+top:10px;
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+font-family: 'Play', sans-serif;
+
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+top:-20px;
+font-size:14px;
+color:#3a7bd5;
+
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:100%; }
+.bar:before, .bar:after 	{
+content:'';
+height:2px; 
+width:0;
+bottom:1px; 
+position:absolute;
+background:#3a7bd5; 
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+}
+.bar:before {
+left:50%;
+}
+.bar:after {
+right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+position:absolute;
+/* height:6%;  */
+width:100%; 
+top:25%; 
+left:0;
+pointer-events:none;
+opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+-webkit-animation:inputHighlighter 0.3s ease;
+-moz-animation:inputHighlighter 0.3s ease;
+animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+from { background:#3a7bd5; }
+to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+from { background:#3a7bd5; }
+to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+from { background:#3a7bd5; }
+to 	{ width:0; background:transparent; }
+}
+
+
+
+/* select starting stylings ------------------------------*/
+.select {
+font-family: 'Play', sans-serif;
+width: 100%;
+padding: 0 0 30px 5px
+}
+
+.select-text {
+position: relative;
+font-family: inherit;
+background-color: transparent;
+width: 100%;
+padding: 10px 10px 10px 10px;
+font-size: 18px;
+border-radius: 0;
+border: none;
+border-bottom:1px solid #757575;
+cursor: pointer;
+}
+/* Remove focus */
+.select-text:focus {
+outline: none;
+border-bottom:1px solid #75757500;
+
+}
+/* Use custom arrow */
+.select .select-text {
+appearance: none;
+-webkit-appearance:none
+}
+
+.select:after {
+position: absolute;
+top: 18px;
+right: 10px;
+/* Styling the down arrow */
+width: 0;
+height: 1px;
+padding: 0 ;
+content: '';
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 6px solid rgba(0, 0, 0, 0.12);
+pointer-events: none;
+}
+
+
+/* LABEL ======================================= */
+.select-label {
+color:#999; 
+font-size: 18px;
+font-weight: normal;
+position: absolute;
+pointer-events: none;
+left: 20px;
+top: 10px;
+transition: 0.2s ease all;
+}
+
+/* active state */
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+color: #2F80ED;
+top: -20px;
+transition: 0.2s ease all;
+font-size: 14px;
+}
+
+/* BOTTOM BARS ================================= */
+.select-bar {
+position: relative;
+display: block;
+width: 100%;
+}
+
+.select-bar:before, .select-bar:after {
+content: '';
+height: 2px;
+width: 0;
+bottom: 1px;
+position: absolute;
+background: #2F80ED;
+transition: 0.2s ease all;
+}
+
+.select-bar:before {
+left: 50%;
+}
+
+.select-bar:after {
+right: 50%;
+}
+
+/* active state */
+.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.select-highlight {
+position: absolute;
+height: 60%;
+width: 100px;
+top: 25%;
+left: 0;
+pointer-events: none;
+opacity: 0.5;
+}
